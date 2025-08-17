@@ -98,4 +98,3 @@ export function TokenManager({ token, targetAddress }: TokenManagerProps) {
     </div>
   )
 }
-

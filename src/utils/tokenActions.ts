@@ -1,6 +1,6 @@
 import { parseUnits } from "viem";
 import { ERC20_ABI } from "../config/abi";
-import type { TokenState, TokenAction } from "../hooks/tokenReducer";
+import type { TokenState, TokenAction } from "../hooks/token/tokenReducer";
 import { sendTx } from "./sendTx";
 
 export type WriteContractFn = (...a: unknown[]) => Promise<`0x${string}`>;

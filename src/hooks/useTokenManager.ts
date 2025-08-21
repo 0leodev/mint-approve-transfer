@@ -5,11 +5,11 @@ import {
   useTokenReads,
   useTokenWriter,
   useTransactionLoading,
-} from "./tokenContractHooks";
-import { tokenReducer, initialState } from "./tokenReducer";
+} from "./token/tokenContractHooks";
+import { tokenReducer, initialState } from "./token/tokenReducer";
 import { makeTokenHandlers } from "../utils/tokenActions";
 import { fmt as fmtFn } from "../utils/format";
-import { useTokenPolling } from "./useTokenPolling";
+import { useTokenPolling } from "./token/useTokenPolling";
 
 export function useTokenManager(
   token: { address: string; decimals: number; symbol: string },

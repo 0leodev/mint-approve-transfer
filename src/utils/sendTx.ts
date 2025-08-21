@@ -1,4 +1,4 @@
-import type { TokenState, TokenAction } from "../hooks/tokenReducer";
+import type { TokenState, TokenAction } from "../hooks/token/tokenReducer";
 
 export async function sendTx(params: {
   kind: "approve" | "transfer" | "mint";
